@@ -1,0 +1,16 @@
+{
+  "name": "react-native-snowboy",
+  "version": "0.0.4",
+  "description": "A hotword detector for react-native with SnowBoy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+	"snowboy",
+    "hotword",
+    "react-native"
+  ],
+  "author": "UniciTee",
+  "license": "MIT"
+}
