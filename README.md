@@ -49,7 +49,8 @@ public class MainApplication extends Activity implements ReactApplication {
 }
 ```
 * In YourProject/android/app/src/main/assets
-Create **snowboy** folder and put inside it the files **alexa.umdl** (or your own *umdl* or *umdl* file) and **common.res**
+
+Create **snowboy** folder and put inside it the files **alexa.umdl** (or your own *umdl* or *umdl* file) and **common.res**.
 You can get these files [here](https://github.com/Kitt-AI/snowboy/tree/master/examples/Android/SnowboyAlexaDemo/assets/snowboy) 
 https://github.com/Kitt-AI/snowboy/tree/master/examples/Android/SnowboyAlexaDemo/assets/snowboy
 

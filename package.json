@@ -1,6 +1,6 @@
 {
   "name": "react-native-snowboy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A hotword detector for react-native with SnowBoy",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,9 @@
     "react-native"
   ],
   "author": "UniciTee",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  }
 }
