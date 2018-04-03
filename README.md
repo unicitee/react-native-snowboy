@@ -10,7 +10,7 @@ A hotword detection engine for Android.
 * Install Module
 
 ```bash
-npm install --save-dev react-native-snowboy
+npm install --save react-native-snowboy
 ```
 
 * In `android/settings.gradle`
