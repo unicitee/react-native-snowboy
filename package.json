@@ -13,8 +13,8 @@
   ],
   "author": "UniciTee",
   "license": "MIT",
-  "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicitee/react-native-snowboy.git"
   }
 }
