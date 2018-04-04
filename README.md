@@ -1,3 +1,4 @@
+
 React Native Snowboy hotword detection engine.
 
 
@@ -80,6 +81,12 @@ Init the engine.
 ```js
 componentDidMount() {
 	snowboy.initHotword()
+	.then((res)=> {
+		console.log(res)
+	})
+	.catch((err)=> {
+		console.log(err)
+	})
 }
 
 ```
@@ -127,17 +134,17 @@ Use event listeners to do whatever you want when the hotword is detected
 ```js
 componentWillMount() {	
 	// No hotword detected
-	DeviceEventEmitter.addListener("msg-vad-speech", (e) => {
+	snowboy.addEventListener("msg-vad-speech", (e) => {
 		console.log('msg-vad-speech',e)
 	})
 	
 	// No speech: silence
-	DeviceEventEmitter.addListener("msg-vad-nospeech", (e) => {
+	snowboy.addEventListener("msg-vad-nospeech", (e) => {
 		console.log('msg-vad-nospeech',e)
 	})
 	
 	// The hotword is decteced
-	DeviceEventEmitter.addListener("msg-active", (e) => {
+	snowboy.addEventListener("msg-active", (e) => {
 		console.log('msg-active',e)
 	})
 }
