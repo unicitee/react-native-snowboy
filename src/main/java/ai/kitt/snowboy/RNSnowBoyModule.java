@@ -35,7 +35,7 @@ public class RNSnowBoyModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void initHotword() {
+    public void initHotword(Promise promise) {
         if (ActivityCompat.checkSelfPermission(mReactContext,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(mReactContext,
@@ -72,10 +72,10 @@ public class RNSnowBoyModule extends ReactContextBaseJavaModule {
 						}
 					}
 				}, new AudioDataSaver());
-				sendEvent("init", "success");
+				promise.resolve(true);
 			} catch(Exception e) {
 				String errorMessage = e.getMessage();
-				sendEvent("init", errorMessage);
+				promise.reject(errorMessage);
 			}
         }
 
